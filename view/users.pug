@@ -1,0 +1,13 @@
+doctype html
+html(lang="ru")
+head
+    title #{title}
+    meta(charset='UTF-8')
+body
+    div.content
+        if value == -1
+                p Пользователя нет
+        else
+            p Пользователь есть
+        .btn
+            button(type='button' onclick='history.back()') Назад

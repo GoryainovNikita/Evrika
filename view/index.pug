@@ -1,0 +1,10 @@
+doctype html
+html(lang="ru")
+head
+    title #{title}
+    meta(charset='UTF-8')
+body
+    div.content
+        form&attributes({'method': 'post', 'action': '/user'})
+            input.item&attributes({'type': 'text', 'name': 'name', 'placeholder': 'Пользователь'})
+            button.item&attributes({'type': 'submit'}) Проверить
